@@ -2,6 +2,8 @@
 
 Simple tool for generating AsciiDoc plans and designs for software projects.
 
+* [Example Design Document](https://etscrivner.github.io/designdoc/index.html)
+
 ## Philosophy
 
 Disciplined software engineering practices encourage developers to create plans
