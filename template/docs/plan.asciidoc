@@ -1,0 +1,48 @@
+= link:index.html[My Project Title] > Plan
+
+This document outlines the plan for the construction of the project. It is
+mainly used for creating an initial estimate of the work required.
+
+== Overview
+
+A quick overview of the motivations for the project. Generally a brief
+description starting with the current state, listing the issue or issues with
+that state, and then finally a sentence describing the project and its goals.
+
+== Required Components
+
+This section contains general speculation about the kinds of components you'll
+likely have to build for this project.
+
+.Components
+[options="header"]
+|===
+| Component | Description
+
+| First Component
+a|
+The first component will provide the following functionality:
+
+* This one thing
+* And this other thing.
+* Finally this third thing
+
+| Second Component
+a|
+More descriptive stuff about the second component
+|===
+
+== Additional Work
+
+This section should just describe anything else important to note that is
+required for the project.
+
+.Additional Work
+[options="header"]
+|===
+| Work | Description
+
+| Update the database with this information
+| Description of what that update involves. Maybe adding a new field?
+
+|===

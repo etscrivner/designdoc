@@ -1,0 +1,9 @@
+= My Project Title
+
+This section should contain a brief description of the project and the
+motivations for it.
+
+== Links
+
+* link:plan.html[Plan Document]
+* link:design.html[Design Document]

@@ -1,0 +1,83 @@
+= link:index.html[My Project Title] > Design
+
+== NewObject
+
+=== Functional
+
+[width="50%"]
+|===
+| Class Name: | MyObject
+| Parent Class: | N/A
+|===
+
+.Attributes
+[options="header"]
+|===
+| Declaration | Description
+
+| `CONSTANT_VALUE : Type = ConstantValue {Constraints}`
+| Description of the constant value.
+| `FirstAttribute : Type = DefaultValue {Constraints}`
+| Description of FirstAttribute.
+
+|===
+
+.Interfaces
+[options="header"]
+|===
+| Method | Description
+
+| `new(arg1 : Type2, arg1 : Type2) -> ReturnType`
+a|
+*Description*
+
+A description of this method. Seems like some sort of initialization method.
+
+*Arguments*
+
+[options="header"]
+!===
+! Argument ! Description
+
+! arg1 ! A description of the first argument to the method.
+! arg2 ! A description of the second argument.
+!===
+
+*Return Value*
+
+Some descriptive phrasing about the return value.
+
+*Errors*
+
+* *FirstError:* Raise when this condition occurs.
+* *SecondError:* When some other condition occurs
+|===
+
+=== new(arg1, arg2) -> ReturnType
+
+==== Logic
+
+This section contains a brief pseudo-code description of the logic for the
+method:
+
+```
+instance.arg1 := arg1
+instance.arg2 := arg2
+
+raise FirstError if this condition is true
+raise SecondError if this other condition is true
+```
+
+==== Operation
+
+This section contains an operational description (think use-cases and test
+cases) for the method. Often, table-based descriptions are excellent.
+
+[options="header"]
+|===
+| arg1 | arg2 | Result
+
+| "frob" | 23 | Success
+| "frob" | -23 | SecondError
+| "" | 23 | FirstError
+|===

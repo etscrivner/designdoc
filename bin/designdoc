@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+# designdoc - Generates a design document project.
+#
+# This is a simple shell script that will copy the documentation project to the
+# desired directory.
+
+# Print usage if no arguments are given
+USAGE="Usage: designdoc new DESTDIR"
+if [ "$#" != "2" ]
+then
+    echo "${USAGE}"
+    exit 1
+fi
+
+Command="${1}"
+DestDir="${2}"
+
+# React to the command given
+case "${Command}" in
+    new)
+        # Create the destination directory if it does not already exist
+        if [ ! -d "${DestDir}" ]
+        then
+            echo === Creating directory "${DestDir}"
+            mkdir -p "${DestDir}"
+        else
+            # If the directory is not empty, then abort so we don't overwrite its contents
+            if find "${DestDir}" -mindepth -1 -print -quit 2>/dev/null |  grep -q .
+            then
+                echo "Aborting since directory '${DestDir}' is not empty."
+                exit 1
+            fi
+        fi
+
+        echo === Generating new project
+        echo "Copying template to ${DestDir}"
+
+        # Copy the contents of the template directory to the destination directory
+        cp -R ../template/** "${DestDir}"
+
+        echo "DONE! ${DestDir} contains a new project design document."
+        ;;
+    *)
+        echo "Unknown command '${Command}'"
+        echo "${USAGE}"
+esac
